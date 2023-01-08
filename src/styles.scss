@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face {
   font-family: "Abril Fatface";
-  src: local("Oxygen"), url(./assets/fonts/Abril_Fatface/AbrilFatface-Regular.ttf) format("truetype");
+  src: local("Oxygen"), url(./assets/fonts/abril/AbrilFatface-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Abril Regular";
+  src: local("Oxygen"), url(./assets/fonts/abril/AbrilDisplay-Regular.otf) format("opentype");
 }
