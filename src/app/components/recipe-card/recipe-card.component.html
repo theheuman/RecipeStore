@@ -3,6 +3,7 @@
     {{recipe.name}}
   </h1>
   <div class="ingredients">
+    Ingredients
     <ul>
       <li *ngFor="let ingredient of recipe.ingredients">
         {{getlowestfraction(ingredient.amount)}} {{ ingredient.amount === 1 ? ingredient.measuringUnit : unitPluralMap.get(ingredient.measuringUnit) }} {{ ingredient.edibleSubstance.name}}
@@ -10,6 +11,12 @@
     </ul>
   </div>
   <div class="steps">
+    Steps
+    <ul>
+      <li *ngFor="let step of recipe.steps">
+        {{step}}
+      </li>
+    </ul>
 
   </div>
 </div>
