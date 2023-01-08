@@ -50,7 +50,7 @@ export class RecipeService {
       "Add layer of cheese on top",
       "Heat in 350 oven till warm and cheese melts, usually around 20-30 minutes"
     ],
-    notes: "Use hormels no bean chilli, use salsa of your preferred spice level, you can use less cheese if desired"
+    notes: "Use hormels no bean chilli, salsa of your preferred spice level. You can use less cheese if desired"
   }
   constructor() { }
 

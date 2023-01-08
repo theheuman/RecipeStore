@@ -3,7 +3,13 @@
   font-family: "Abril Fatface";
   src: local("Oxygen"), url(./assets/fonts/abril/AbrilFatface-Regular.ttf) format("truetype");
 }
+
 @font-face {
   font-family: "Abril Regular";
   src: local("Oxygen"), url(./assets/fonts/abril/AbrilDisplay-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Abril Regular Italic";
+  src: local("Oxygen"), url(./assets/fonts/abril/AbrilDisplay-Italic.otf) format("opentype");
 }
