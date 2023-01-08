@@ -19,7 +19,13 @@ export class RecipeCardComponent implements OnInit {
   }
 
   getlowestfraction(startingNumber: number) {
+    /*
+     * basically the precision of the calculation
+     * if a number is .143  eps 1.0E-3 works,
+     * if a number is .1435 eps 1.0E-3 will drop the last digit from the calculation
+     */
     const eps = 1.0E-3;
+
 
     let x = startingNumber;
     let a = Math.floor(x);
