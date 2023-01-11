@@ -7,12 +7,14 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { RecipeCardComponent } from './components/recipe-card/recipe-card.component';
 import { RecipeListComponent } from './components/recipe-list/recipe-list.component';
+import { LandingComponent } from './pages/landing/landing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RecipeCardComponent,
-    RecipeListComponent
+    RecipeListComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,

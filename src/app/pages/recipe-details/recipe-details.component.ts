@@ -7,7 +7,6 @@ import {Recipe} from "../../interfaces/Recipe";
   styleUrls: ['./recipe-details.component.scss']
 })
 export class RecipeDetailsComponent implements OnInit {
-  @Input() recipe: Recipe
 
   constructor() { }
 
