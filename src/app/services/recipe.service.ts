@@ -55,6 +55,6 @@ export class RecipeService {
   constructor() { }
 
   getRecipes(): Promise<Recipe[]> {
-    return Promise.resolve([this.mexicanNoBeanDip])
+    return Promise.resolve([this.mexicanNoBeanDip, this.mexicanNoBeanDip, this.mexicanNoBeanDip, this.mexicanNoBeanDip, this.mexicanNoBeanDip, this.mexicanNoBeanDip])
   }
 }
