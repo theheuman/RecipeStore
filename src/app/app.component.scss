@@ -1,0 +1,108 @@
+:host {
+  font-family: "Abril Regular",serif;
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.toolbar {
+  background-color: #2c5494;
+  color: white;
+  font-weight: 600;
+}
+
+.toolbar img {
+  margin: 0 16px;
+}
+
+.content {
+  display: flex;
+  padding: 0 16px;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-family: "Abril Fatface", serif;
+  font-size: 20px;
+  letter-spacing: .7px;
+}
+
+/* Responsive Styles */
+@media screen and (orientation:landscape) {
+
+  .body {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+  }
+
+  .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 200px;
+
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .navigation-items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 15px;
+
+      .nav-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 15px;
+
+        min-height: 48px;
+        width: 100%;
+        padding: 5px;
+        border-radius: 10px;
+
+        &.add {
+          background-color: white;
+          color: #2c5494;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .content {
+    margin-left: 225px;
+    padding-top: 30px;
+  }
+}
+
+/* Responsive Styles */
+@media screen and (orientation:portrait) {
+  .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+
+  .content {
+    margin: 82px auto 32px;
+
+  }
+}
