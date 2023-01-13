@@ -8,6 +8,7 @@ import {MeasuringUnit} from "../enums/MeasuringUnit";
 export class RecipeService {
 
   mexicanNoBeanDip: Recipe = {
+    id: "1",
     name: "Mexican No Bean Dip",
     ingredients: [
       {
@@ -44,7 +45,7 @@ export class RecipeService {
       },
     ],
     steps: [
-      "Let it come to room temp then spread in bottom of 8x8 dish",
+      "Let cream cheese come to room temp then spread in bottom of 8x8 dish",
       "Add a layer of no bean chili",
       "Add layer of salsa",
       "Add layer of cheese on top",
@@ -52,9 +53,39 @@ export class RecipeService {
     ],
     notes: "Use hormels no bean chilli, salsa of your preferred spice level. You can use less cheese if desired"
   }
+
+  buffaloChickenDip: Recipe = {
+    id: "2",
+    name: "Buffalo Chicken Dip",
+    ingredients: [
+      {
+        amount: 8,
+        measuringUnit: MeasuringUnit.OUNCE,
+        edibleSubstance: {
+          name: "cream cheese",
+          preferredMeasuringUnit: MeasuringUnit.OUNCE
+        }
+      },
+    ],
+    steps: [
+      "In a small bowl, mix chicken with buffalo sauce",
+      "Let cream cheese come to room temp then spread in bottom of 8x8 dish",
+      "Add layer buffalo chicken",
+      "Add blue cheese dressing",
+      "Add shredded monterrey jack",
+      "Heat in 350 oven till warm and cheese melts, usually around 20-30 minutes"
+    ],
+  }
+
+  recipes = [this.mexicanNoBeanDip, this.buffaloChickenDip]
+
   constructor() { }
 
   getRecipes(): Promise<Recipe[]> {
-    return Promise.resolve([this.mexicanNoBeanDip, this.mexicanNoBeanDip, this.mexicanNoBeanDip, this.mexicanNoBeanDip, this.mexicanNoBeanDip, this.mexicanNoBeanDip])
+    return Promise.resolve(this.recipes)
+  }
+
+  getRecipe(id: string): Promise<Recipe> {
+    return Promise.resolve(this.recipes.filter((recipe) => recipe.id === id)[0])
   }
 }

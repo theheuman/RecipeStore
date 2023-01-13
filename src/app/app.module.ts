@@ -8,13 +8,15 @@ import { environment } from '../environments/environment';
 import { RecipeCardComponent } from './components/recipe-card/recipe-card.component';
 import { RecipeListComponent } from './components/recipe-list/recipe-list.component';
 import { LandingComponent } from './pages/landing/landing.component';
+import {RecipeDetailsComponent} from "./pages/recipe-details/recipe-details.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     RecipeCardComponent,
     RecipeListComponent,
-    LandingComponent
+    LandingComponent,
+    RecipeDetailsComponent
   ],
   imports: [
     BrowserModule,

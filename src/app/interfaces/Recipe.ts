@@ -2,6 +2,7 @@ import { Ingredient } from "./Ingredient";
 import { RecipeTag } from "../enums/RecipeTag";
 
 export interface Recipe {
+  id: string
   name: string
   ingredients: Ingredient[]
   steps: string[]
