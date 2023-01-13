@@ -1,1 +1,43 @@
-<p>recipe-details works! {{recipe?.name}}</p>
+<ng-container *ngIf="!recipe">
+
+</ng-container>
+<ng-container *ngIf="recipe">
+  <input
+    class="input header"
+    [ngClass]="{'disabled': !edit}"
+    type="text"
+    [readonly]="!edit"
+    [value]="recipe.name"
+  >
+  <div
+    class="side-by-side"
+    *ngFor="let ingredient of recipe.ingredients"
+  >
+    <input
+      class="input"
+      [ngClass]="{'disabled': !edit}"
+      type="number"
+      [readonly]="!edit"
+      [value]="ingredient.amount"
+    >
+    <input
+      class="input"
+      [ngClass]="{'disabled': !edit}"
+      type="text"
+      [readonly]="!edit"
+      [value]="ingredient.measuringUnit"
+    >
+    <input
+      class="input"
+      [ngClass]="{'disabled': !edit}"
+      type="text"
+      [readonly]="!edit"
+      [value]="ingredient.edibleSubstance.name"
+    >
+
+  </div>
+  <button (click)="edit = !edit">
+    Edit
+  </button>
+</ng-container>
+

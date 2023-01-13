@@ -10,7 +10,7 @@ import {MeasuringUnitMap, MeasuringUnitPlurals} from "../../enums/MeasuringUnit"
 export class RecipeCardComponent implements OnInit {
 
   unitPluralMap = MeasuringUnitMap
-  @Input() recipe: Recipe
+  @Input() recipe: Recipe | undefined
 
   constructor() {
   }

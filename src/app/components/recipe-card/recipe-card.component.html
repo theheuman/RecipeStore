@@ -1,4 +1,7 @@
-<div class="card" [routerLink] = "['/details', recipe.id]">
+<div *ngIf="!recipe" class="card">
+  Loading
+</div>
+<div *ngIf="recipe" class="card" [routerLink] = "['/details', recipe.id]">
   <h1>
     {{recipe.name}}
   </h1>

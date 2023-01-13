@@ -1,0 +1,13 @@
+.input {
+  font-size: 15px;
+  font-family: "Abril Regular", serif;
+
+  &.disabled {
+    border: 2px solid transparent;
+  }
+
+  &.header {
+    font-size: 35px;
+    font-family: "Abril Fatface", serif;
+  }
+}

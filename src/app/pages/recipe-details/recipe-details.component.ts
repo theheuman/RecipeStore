@@ -10,6 +10,7 @@ import {RecipeService} from "../../services/recipe.service";
 })
 export class RecipeDetailsComponent implements OnInit {
   recipe: Recipe | undefined
+  edit = false
   constructor(private route: ActivatedRoute, private recipeService: RecipeService) { }
 
   ngOnInit(): void {
@@ -18,7 +19,6 @@ export class RecipeDetailsComponent implements OnInit {
       this.recipeService.getRecipe(id).then((recipe) => {
         this.recipe = recipe
       })
-
     });
   }
 
