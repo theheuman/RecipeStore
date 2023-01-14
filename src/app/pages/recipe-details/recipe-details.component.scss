@@ -1,9 +1,38 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+  -moz-appearance:textfield; /* Firefox */
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+
 .input {
   font-size: 15px;
   font-family: "Abril Regular", serif;
+  min-height: 48px;
+  min-width: 48px;
+  border: 2px solid transparent;
+
+  :focus {
+    border: none
+  }
 
   &.disabled {
-    border: 2px solid transparent;
+  }
+
+  &.amount {
+    width: 48px !important;
   }
 
   &.header {

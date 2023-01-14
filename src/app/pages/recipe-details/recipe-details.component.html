@@ -1,7 +1,7 @@
 <ng-container *ngIf="!recipe">
-
+  Loading recipe...
 </ng-container>
-<ng-container *ngIf="recipe">
+<div class="recipe-container" *ngIf="recipe">
   <input
     class="input header"
     [ngClass]="{'disabled': !edit}"
@@ -14,7 +14,7 @@
     *ngFor="let ingredient of recipe.ingredients"
   >
     <input
-      class="input"
+      class="input amount"
       [ngClass]="{'disabled': !edit}"
       type="number"
       [readonly]="!edit"
@@ -39,5 +39,5 @@
   <button (click)="edit = !edit">
     Edit
   </button>
-</ng-container>
+</div>
 
