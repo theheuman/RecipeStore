@@ -9,6 +9,10 @@ import { RecipeCardComponent } from './components/recipe-card/recipe-card.compon
 import { RecipeListComponent } from './components/recipe-list/recipe-list.component';
 import { LandingComponent } from './pages/landing/landing.component';
 import {RecipeDetailsComponent} from "./pages/recipe-details/recipe-details.component";
+import { IngredientsComponent } from './pages/ingredients/ingredients.component';
+import { MeasuringUnitsComponent } from './pages/measuring-units/measuring-units.component';
+import { CategoriesComponent } from './pages/categories/categories.component';
+import { TagsComponent } from './pages/tags/tags.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import {RecipeDetailsComponent} from "./pages/recipe-details/recipe-details.comp
     RecipeCardComponent,
     RecipeListComponent,
     LandingComponent,
-    RecipeDetailsComponent
+    RecipeDetailsComponent,
+    IngredientsComponent,
+    MeasuringUnitsComponent,
+    CategoriesComponent,
+    TagsComponent
   ],
   imports: [
     BrowserModule,

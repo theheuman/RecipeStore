@@ -5,22 +5,23 @@
       width="45"
       alt="JH Logo"
       src="assets/images/logo-white.png"
+      routerLink="/"
     />
-    <span class="title">Recipe Store</span>
+    <span class="title" routerLink="/">Recipe Store</span>
     <div class="navigation-items">
       <div class="nav-item add">
         Add Recipe
       </div>
-      <div class="nav-item">
+      <div class="nav-item" (click)="navigate('ingredients')">
         Your Ingredients
       </div>
-      <div class="nav-item">
+      <div class="nav-item" (click)="navigate('measuring-units')">
         Your Measuring Units
       </div>
-      <div class="nav-item">
+      <div class="nav-item" (click)="navigate('categories')">
         Your Categories
       </div>
-      <div class="nav-item">
+      <div class="nav-item" (click)="navigate('tags')">
         Your Tags
       </div>
     </div>
