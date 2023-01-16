@@ -9,8 +9,11 @@
     [readonly]="!edit"
     [value]="recipe.name"
   >
+  <p>
+    Ingredients
+  </p>
   <div
-    class="side-by-side"
+    class="ingredients side-by-side"
     *ngFor="let ingredient of recipe.ingredients"
   >
     <input
@@ -35,6 +38,33 @@
       [value]="ingredient.edibleSubstance.name"
     >
 
+  </div>
+  <p>
+    Notes
+  </p>
+  <textarea
+    class="textarea"
+    [ngClass]="{'disabled': !edit}"
+    [readonly]="!edit"
+    [value]="recipe.notes"
+  >
+  </textarea>
+
+  <p>
+    Steps
+  </p>
+
+  <div
+    class="steps side-by-side"
+    *ngFor="let step of recipe.steps"
+  >
+    <textarea
+      class="textarea"
+      [ngClass]="{'disabled': !edit}"
+      [readonly]="!edit"
+      [value]="step"
+    >
+    </textarea>
   </div>
   <button (click)="edit = !edit">
     Edit

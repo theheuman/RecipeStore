@@ -19,16 +19,13 @@ button:focus {
 
 .input {
   font-size: 15px;
-  font-family: "Abril Regular", serif;
   min-height: 48px;
   min-width: 48px;
-  border: 2px solid transparent;
-
-  :focus {
-    border: none
-  }
+  width: fit-content;
+  font-family: inherit;
 
   &.disabled {
+    border: 2px solid transparent;
   }
 
   &.amount {
@@ -38,5 +35,16 @@ button:focus {
   &.header {
     font-size: 35px;
     font-family: "Abril Fatface", serif;
+  }
+}
+
+.textarea {
+  min-width: 100%;
+  padding: 5px;
+  font-family: inherit;
+
+  &.disabled {
+    border: 2px solid transparent;
+    resize: none;
   }
 }
