@@ -7,6 +7,7 @@ export interface Ingredient {
 }
 
 export interface EdibleSubstance {
+  id: string
   name: string
   preferredMeasuringUnit: MeasuringUnit
 }
