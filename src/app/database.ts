@@ -27,6 +27,30 @@ export const shreddedCheddar: EdibleSubstance = {
   preferredMeasuringUnit: MeasuringUnit.CUP
 }
 
+export const shreddedChicken: EdibleSubstance = {
+  id: '5',
+  name: "Shredded Chicken",
+  preferredMeasuringUnit: MeasuringUnit.CUP
+}
+
+export const wingSauce: EdibleSubstance = {
+  id: '6',
+  name: "Wing Sauce",
+  preferredMeasuringUnit: MeasuringUnit.CUP
+}
+
+export const blueCheeseDressing: EdibleSubstance = {
+  id: '7',
+  name: "Blue Cheese Dressing",
+  preferredMeasuringUnit: MeasuringUnit.CUP
+}
+
+export const shreddedMonterreyJackCheese: EdibleSubstance = {
+  id: '8',
+  name: "Shredded Monterrey Jack Cheese",
+  preferredMeasuringUnit: MeasuringUnit.CUP
+}
+
 // recipes
 export const mexicanNoBeanDip: Recipe = {
   id: "1",
@@ -71,6 +95,26 @@ export const buffaloChickenDip: Recipe = {
       amount: 8,
       measuringUnit: MeasuringUnit.OUNCE,
       edibleSubstance: creamCheese
+    },
+    {
+      amount: 2,
+      measuringUnit: MeasuringUnit.CUP,
+      edibleSubstance: shreddedChicken
+    },
+    {
+      amount: .5,
+      measuringUnit: MeasuringUnit.CUP,
+      edibleSubstance: wingSauce
+    },
+    {
+      amount: .5,
+      measuringUnit: MeasuringUnit.CUP,
+      edibleSubstance: blueCheeseDressing
+    },
+    {
+      amount: .5,
+      measuringUnit: MeasuringUnit.CUP,
+      edibleSubstance: shreddedMonterreyJackCheese
     },
   ],
   steps: [
